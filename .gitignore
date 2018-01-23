@@ -1,0 +1,7 @@
+.*
+!*.yml
+!.gitignore
+target
+*.iml
+*.log
+
