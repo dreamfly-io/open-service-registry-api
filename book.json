@@ -1,0 +1,35 @@
+{
+  "gitbook": ">=3.2.0",
+  "description": "Open Service Registry API文档",
+  "language": "zh-hans",
+  "author": "敖小剑",
+  "extension": null,
+  "generator": "site",
+  "links" : {
+    "sidebar" : {
+        "DreamFly网站": "https://dreamfly.io",
+        "Open Service Registry API项目": "https://github.com/dreamfly-io/open-service-registry-api/"
+    }
+  },
+  "structure" : {
+    },
+  "plugins": [
+    "splitter",
+    "-search",
+    "-sharing",
+    "edit-link",
+	"devops"
+  ],
+  "pluginsConfig": {
+    "edit-link": {
+        "base": "https://github.com/dreamfly-io/open-service-registry-api/edit/docs",
+        "label": "Edit"
+    },
+	"devops":{
+		"bd_token": "26965a850b6e745226c7fdddf98e0472"
+	}
+  },
+  "title": "Open Service Registry API文档",
+  "variables": {
+  }
+}
