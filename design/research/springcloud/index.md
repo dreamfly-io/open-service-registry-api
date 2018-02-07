@@ -128,13 +128,4 @@ public interface ServiceRegistry<R extends Registration> {
 
 服务器端的接口可以通过setStatus()/getStatus()来获取和修改实例的状态。
 
-## 具体实现
-
-### Eureka实现
-
-
-### ZooKeeper实现
-
-### Consul实现
-
-
+具体实现见后面。
