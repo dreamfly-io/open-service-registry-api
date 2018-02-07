@@ -54,5 +54,5 @@ consul的服务定义可以参考官方文档：
 
 consul的服务注册是支持多数据中心的，这是一个很大的天然优势。
 
-注意ServiceTags只是一个简单的string[]，而不是`map<String, String>`这样的一个map。换句话说，consul的tag只有key，没有value。
+注意ServiceTags只是一个简单的string[]，而不是`map<String, String>`这样的一个map。换句话说，consul的tag只有key，没有value。后面和spring cloud集成时，会使用一个简单的技巧，通过在tag中使用等号来将一个string("key=value"格式)转为一对key/value。
 
