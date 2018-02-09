@@ -4,7 +4,8 @@
 
 kubernetes中的服务定义如下：
 
-https://kubernetes.io/docs/api-reference/v1.9/#service-v1-core
+- [v1.8](https://v1-9.docs.kubernetes.io/docs/api-reference/v1.8/)
+- [v1.9](https://v1-9.docs.kubernetes.io/docs/api-reference/v1.9/#service-v1-core)
 
 | 字段 | 类型 | 描述 | 备注 |
 |--------|--------|--------|--------|
@@ -36,8 +37,18 @@ https://kubernetes.io/docs/api-reference/v1.9/#service-v1-core
 | externalTrafficPolicy | string |  |  | |
 | ports | ServicePort[] | 服务暴露的端口列表 |  | |
 | selector | object |  |  | |
-| clusterIP | string |  |  | |
+| type | string | 服务暴露的类型。默认ClusterIP |  | |
 
+
+### ServicePort
+
+| 字段 | 类型 | 描述 | 备注 |
+|--------|--------|--------|--------|
+| name | string | 服务端口的名称 |  |
+| nodePort | integer | 当type是NodePort或者LoadBalancer时，被暴露的服务所在的node的端口 |  |
+| port | integer | 服务暴露的端口 |  |
+| protocol | string | 这个端口的IP协议，支持TCP和UDP，默认TCP |  |
+| targetPort | integer/string |  |  |
 
 
 
