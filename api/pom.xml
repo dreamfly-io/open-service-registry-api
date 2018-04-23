@@ -10,5 +10,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>open-service-registry-api</artifactId>
+    <name>Api - Open Service Registry API</name>
 
 </project>

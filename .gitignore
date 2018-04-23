@@ -1,7 +1,25 @@
-.*
-!*.yml
-!.gitignore
-target
+# maven ignore
+target/
+*.war
+*.zip
+*.tar
+*.tar.gz
+
+# eclipse ignore
+.settings/
+.project
+.classpath
+
+# idea ignore
+.idea/
+*.xml
+*.ipr
 *.iml
+*.iws
+
+# temp ignore
+*.doc
 *.log
+*.patch
+*.tmp
 
